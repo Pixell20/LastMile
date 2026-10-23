@@ -1,0 +1,20 @@
+/* Vendor directory, task cards, map animation, reduced motion, portal login dialog. */
+.vendor-directory{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}.vendor-tile{border:1px solid var(--line);border-radius:13px;overflow:hidden;background:var(--panel)}.vendor-art{height:98px;position:relative;display:grid;place-items:center;font-size:33px;background:linear-gradient(135deg,#e6f1df,#cfe5d0);overflow:hidden}.vendor-art img{width:100%;height:100%;object-fit:cover;display:block}.vendor-art .vendor-fallback{display:none;position:absolute;inset:0;place-items:center;background:linear-gradient(135deg,#e6f1df,#cfe5d0);font-size:32px}.vendor-tile strong{display:block;font-size:12px;padding:10px 10px 0}.vendor-tile small{display:block;color:var(--muted);padding:4px 10px 11px;line-height:1.45}.checklist{display:grid;gap:12px}.checklist label{display:flex;gap:10px;align-items:center;padding:11px;border:1px solid var(--line);border-radius:11px;background:var(--bg);font-weight:650;font-size:12px}.checklist input{accent-color:#26704e;width:17px;height:17px}.task-card{border:1px solid var(--line);border-radius:13px;padding:13px;margin:10px 0;display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap}.task-main{flex:1;min-width:190px}.task-main strong{display:block}.task-main p{font-size:12px;color:var(--muted);margin:5px 0}.task-actions{display:flex;gap:6px;flex-wrap:wrap}.map-rider{transform-box:fill-box;transform-origin:center;animation:ping 1.8s ease-out infinite}.route-dash{stroke-dasharray:8 7;animation:routeFlow 1.2s linear infinite}@keyframes ping{0%{stroke-width:2;opacity:1}100%{stroke-width:7;opacity:.45}}@keyframes routeFlow{to{stroke-dashoffset:-30}}.location-label{font-size:9px;fill:var(--ink);font-weight:800;paint-order:stroke;stroke:var(--panel);stroke-width:3px;stroke-linejoin:round}.status.unresponsive{color:#b73f36;background:#fdebe8}
+
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
+
+.portal-login-dialog{width:min(460px,calc(100vw - 28px));border:1px solid var(--line);padding:0;border-radius:20px;background:var(--panel);color:var(--ink);box-shadow:0 24px 90px #061b1270}
+.portal-login-dialog::backdrop{background:#081d16a8;backdrop-filter:blur(5px)}
+.portal-login-dialog .modal-head{padding:20px 22px 14px;border-bottom:1px solid var(--line)}
+.portal-login-dialog .modal-head h2{margin:4px 0 0;font-size:22px;letter-spacing:-.5px}
+.portal-login-dialog .modal-body{padding:20px 22px}
+.portal-login-dialog .modal-foot{padding:14px 22px 20px;display:flex;justify-content:flex-end;gap:8px}
+.login-role-card{display:flex;align-items:center;gap:12px;padding:13px;border:1px solid var(--line);background:var(--bg);border-radius:13px;margin-bottom:18px}
+.login-role-icon{width:42px;height:42px;border-radius:13px;background:var(--green);color:white;display:grid;place-items:center;font-size:22px}
+.login-role-card p{margin:3px 0 0;color:var(--muted);font-size:12px}
+.login-error{color:var(--red);font-size:12px;font-weight:700;margin:10px 0 0}
+.demo-credentials{margin-top:16px;border:1px dashed var(--line);border-radius:12px;padding:12px;font-size:12px}
+.demo-credentials>div{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:8px 0 5px;flex-wrap:wrap}
+.demo-credentials span{font-weight:750}
+.demo-credentials small{color:var(--muted)}

@@ -1,0 +1,4 @@
+/* Theme variables (light + dark), reset, body. Import order in main.jsx = original cascade order. */
+:root{color-scheme:light;--bg:#f2f4ee;--panel:#fff;--ink:#182720;--muted:#718078;--line:#e1e7df;--green:#103d33;--green2:#1d6652;--lime:#d8f06a;--amber:#f3b83f;--red:#c44b42;--blue:#447bc4;--shadow:0 8px 26px #1d39210b}
+[data-theme=dark]{color-scheme:dark;--bg:#111a16;--panel:#19251f;--ink:#edf4ef;--muted:#9aaba1;--line:#304037;--green:#0d2e27;--green2:#64c5a0;--lime:#d8f06a;--amber:#f3b83f;--red:#ff8178;--blue:#83adf1;--shadow:0 8px 26px #0003}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #91c8a9;outline-offset:2px}
